@@ -24,7 +24,7 @@ Programa para contar las líneas de código de un archivo.
 
 En total el proyecto tiene 301 líneas de código y requirió 10 horas en total.
 
-$\frac{LOC}{h}=\frac{301}{10}=$
+$\frac{LOC}{h}=\frac{301}{10}=30.1$
 
 ## Getting Started
 
