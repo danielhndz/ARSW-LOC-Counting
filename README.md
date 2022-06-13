@@ -120,11 +120,11 @@ Los dos tests están en [CounterImplTest](/src/test/java/edu/escuelaing/arsw/lab
 
 ![](../media/class_diagram.png?raw=true)
 
-El programa se divide en `Filters` y `Counters`.
+El programa se divide en *Filters* y *Counters*.
 
-Los `Filters` implementan la interfaz [`Filter`](/src/main/java/edu/escuelaing/arsw/labs/locc/filter/Filter.java). Un `Filter` tiene un método `filter` que recibe una lista de `String` y la devuelve filtrada. [`BlankFilter`](/src/main/java/edu/escuelaing/arsw/labs/locc/filter/BlankFilter.java) filtra las líneas vacías o en blanco y [`JavaCommentFilter`] filtra los comentarios de Java.
+Los *Filters* implementan la interfaz [`Filter`](/src/main/java/edu/escuelaing/arsw/labs/locc/filter/Filter.java). Un `Filter` tiene un método `filter` que recibe una lista de String y la devuelve filtrada. [`BlankFilter`](/src/main/java/edu/escuelaing/arsw/labs/locc/filter/BlankFilter.java) filtra las líneas vacías o en blanco y [`JavaCommentFilter`](/src/main/java/edu/escuelaing/arsw/labs/locc/filter/JavaCommentFilter.java) filtra los comentarios de Java.
 
-Los `Counters` extienden la clase [`CounterImpl`](/src/main/java/edu/escuelaing/arsw/labs/locc/counter/CounterImpl.java), la cual es una implementación de la interfaz [`Counter`](/src/main/java/edu/escuelaing/arsw/labs/locc/counter/Counter.java). Un `Counter` tiene un atributo `filters`, una lista de `Filter`, y un método `count` que recibe una lista de `String` y devuelve un entero. La implementación de `count` en `CounterImpl` aplica, en orden, cada `Filter` de `filters` a la lista de `String` y luego cuenta las líneas. `PhyCounter` es un `CounterImpl` sin filtros en `filters`, `LOCCounter` es una `CounterImpl` con `BlankFilter` y `JavaCommentFilter` en `filters`.
+Los *Counters* extienden la clase [`CounterImpl`](/src/main/java/edu/escuelaing/arsw/labs/locc/counter/CounterImpl.java), la cual es una implementación de la interfaz [`Counter`](/src/main/java/edu/escuelaing/arsw/labs/locc/counter/Counter.java). Un `Counter` tiene un atributo `filters`, una lista de `Filter`, y un método `count` que recibe una lista de String y devuelve un entero. La implementación de `count` en `CounterImpl` aplica, en orden, cada `Filter` de `filters` a la lista de String y luego cuenta las líneas. `PhyCounter` es un `CounterImpl` sin filtros en `filters`, `LOCCounter` es un `CounterImpl` con `BlankFilter` y `JavaCommentFilter` en `filters`.
 
 ## Authors
 
