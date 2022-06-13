@@ -20,7 +20,7 @@ Programa para contar las líneas de código de un archivo.
 | BlankFilter | 15 |
 | JavaCommentFilter | 39 |
 | CounterImplTest | 127 |
-| **Total** | 301 |
+| **Total** | **301** |
 
 En total el proyecto tiene 301 líneas de código y requirió 10 horas en total.
 
